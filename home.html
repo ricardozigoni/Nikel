@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand navbar-light bg-white">
             <a class="navbar-brand" href="#">
-                <img src="./assets/nikel-small-logo.png" alt="nikel logo" class="img-fluid" srcset="">
+                <img src="../assets/assets/images/nikel-small-logo.png" alt="nikel logo" class="img-fluid" srcset="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
               <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             </div>
             <div class="col d-flex mt-4 justify-content-end">
                 <div class="text-center">
-                    <img src="./assets/coins-small.png" alt="image coins" srcset="">
+                    <img src="../assets/assets/images/coins-small.png" alt="image coins" srcset="">
                 </div>
             </div>
           </div>
@@ -83,48 +83,47 @@
           </div>
           <button class="btn button-float" data-bs-toggle="modal" data-bs-target="#transaction-modal"><i class="bi bi-plus"></i></button>
         </div>
-         <!-- Modal -->
-  <div class="modal fade" id="transaction-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Adicionar Lançamento</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form id="create-form">
-            <div class="modal-body">
-            
-                <div class="mb-3">
-                  <label for="value-input" class="form-label">Valor</label>
-                  <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp">                 
+        <!-- Modal -->
+        <div class="modal fade" id="transaction-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Lançamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="mb-3">
-                  <label for="description-input" class="form-label">Descrição</label>
-                  <input type="text" class="form-control" id="description-input">                 
-                </div>      
-                <div class="mb-3">
-                    <label for="date-input" class="form-label">Data da transação</label>
-                    <input type="date" class="form-control" id="date-input">                 
-                  </div>
-                  <div class="mb3">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="type-input" id="inlineRadio1" value="1" checked>
-                        <label class="form-check-label" for="inlineRadio1">Entrada</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2" value="2">
-                        <label class="form-check-label" for="inlineRadio2">Saída</label>
-                      </div>                      
-                  </div>                          
-            </div>
-            <div class="modal-footer">
+                <form id="transaction-form">
+                <div class="modal-body">
+                        <div class="form-group">
+                        <label for="value-input">Valor</label>
+                        <input type="number" step="any" class="form-control" id="value-input" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="description-input">Descrição</label>
+                        <input type="description" class="form-control" id="description-input" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="date-input">Data</label>
+                        <input type="date" class="form-control" id="date-input" placeholder="dd/mm/aa" required>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type-input" id="inlineRadio1" value="1" checked>
+                                <label class="form-check-label" for="inlineRadio1">Entrada</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type-input" id="inlineRadio2" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Saída</label>
+                              </div>
+                        </div>
+                        </div>
+                </div>
+                </div>
+                <div class="modal-footer">
                 <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
-                 <button type="submit" class="btn button-default">Adicionar</button>
+                <button type="submit" class="btn button-default">Adicionar</button>
+                </div>
+                </form>
             </div>
-        </form>
-    </div>
-</div>
-</div>
             </div>
         </div>
     </main>
